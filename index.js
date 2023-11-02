@@ -2,41 +2,6 @@
 
 console.clear();
 
-
-function createStudent(name, age, group) {
-    return {
-        name: name,
-        age: age,
-        group: group
-    }
-}
-
-function Student(name, age, group) {
-    const koreanAge = age + 1;
-
-    let _name = name;
-    let _age = age;
-    let _group = group;
-    let _koreanAge = koreanAge;
-
-    if (new.target === undefined) {
-        return {
-            'FULL_NAME': name,
-            'AGE': age,
-            'GROUP': group
-        }
-    }
-}
-
-const s1 = createStudent('Novruz', 25, 233);
-const s2 = createStudent('Novruz', 25, 233);
-const s3 = new Student('Alex', 25, 233);
-const s4 = Student('Alex', 25, 233);
-
-console.log(s3);
-console.log(s4);
-console.clear();
-
 function MyArray(...args) {
     this.elements = {
         length: 0
